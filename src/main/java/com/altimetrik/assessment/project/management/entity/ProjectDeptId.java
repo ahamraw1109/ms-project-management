@@ -2,21 +2,18 @@ package com.altimetrik.assessment.project.management.entity;
 
 import java.io.Serializable;
 
-import javax.persistence.Embeddable;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Embeddable
+//@Embeddable
+/**
+ * 
+ * @author Ashish Rawat
+ *
+ */
 public class ProjectDeptId implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	//@Id
-	//@GeneratedValue(strategy = GenerationType.IDENTITY)
-	//@Column(name = "PME_PROJ_ID")
 	private int projectId;
 	private int deptId;
 

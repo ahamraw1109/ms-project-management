@@ -1,11 +1,13 @@
 package com.altimetrik.assessment.project.management.model;
-
+/**
+ * 
+ * @author Ashish Rawat
+ *
+ */
 public class EmployeeRequest {
 
 	private int id;
-	//@JsonIgnore
 	private int projectId;
-	//@JsonIgnore
 	private int deptId;
 	private String empCode;
 

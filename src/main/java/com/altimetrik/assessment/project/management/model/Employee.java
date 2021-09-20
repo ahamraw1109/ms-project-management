@@ -2,7 +2,11 @@ package com.altimetrik.assessment.project.management.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
-
+/**
+ * 
+ * @author Ashish Rawat
+ *
+ */
 public class Employee {
 
 	private int id;

@@ -4,13 +4,17 @@ import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.JoinColumn;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+/**
+ * 
+ * @author Ashish Rawat
+ *
+ */
 @Entity
 @Table(name = "PME_DEPARTMENT")
 public class PMEDepartment extends PMEBase {
@@ -52,35 +56,20 @@ public class PMEDepartment extends PMEBase {
 	public void setDeptCode(String deptCode) {
 		this.deptCode = deptCode;
 	}
-	
+
 	@Override
-    public int hashCode() {
-        return this.getId() *this.deptCode.length();
-    }
-	
+	public int hashCode() {
+		return this.getId() * this.deptCode.length();
+	}
+
 	@Override
 	public boolean equals(Object obj) {
-		PMEDepartment dept = (PMEDepartment)obj;
+		PMEDepartment dept = (PMEDepartment) obj;
 		boolean result = false;
-		if(this.getDeptCode().equals(dept.getDeptCode())) {
+		if (this.getDeptCode().equals(dept.getDeptCode())) {
 			result = true;
 		}
 		return result;
 	}
-//	public PMEEmployee getEmployee() {
-//		return employee;
-//	}
-//
-//	public void setEmployee(PMEEmployee employee) {
-//		this.employee = employee;
-//	}
-
-//	public String getDeptCode() {
-//		return deptCode;
-//	}
-//
-//	public void setDeptCode(String deptCode) {
-//		this.deptCode = deptCode;
-//	}
 
 }

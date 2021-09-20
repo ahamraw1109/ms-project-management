@@ -2,13 +2,16 @@ package com.altimetrik.assessment.project.management.entity;
 
 import java.time.LocalDateTime;
 
-import javax.annotation.Generated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Version;
-
+/**
+ * 
+ * @author Ashish Rawat
+ *
+ */
 @MappedSuperclass
 public abstract class PMEBase {
 	

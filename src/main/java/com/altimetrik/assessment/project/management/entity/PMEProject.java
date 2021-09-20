@@ -13,7 +13,11 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
-
+/**
+ * 
+ * @author Ashish Rawat
+ *
+ */
 @Entity
 @NamedQuery(name="PMEProject.findProjectsByProjectId", query = "select prj from PMEProject prj where projectId = ?1")
 @IdClass(ProjectDeptId.class)

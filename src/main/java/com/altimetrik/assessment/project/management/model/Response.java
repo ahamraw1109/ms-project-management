@@ -1,7 +1,12 @@
 package com.altimetrik.assessment.project.management.model;
 
 import java.util.List;
-
+/**
+ * 
+ * @author Ashish Rawat
+ *
+ * @param <T>
+ */
 public class Response<T> {
 	List<T> result;
 	T record;
@@ -16,6 +21,11 @@ public class Response<T> {
 	
 	public Response(List<T> result,int code, String message) {
 		this.result = result;
+		this.code=code;
+		this.message= message;
+		
+	}
+	public Response(int code, String message) {
 		this.code=code;
 		this.message= message;
 		

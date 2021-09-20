@@ -7,7 +7,11 @@ import org.springframework.stereotype.Repository;
 
 import com.altimetrik.assessment.project.management.entity.PMEProject;
 import com.altimetrik.assessment.project.management.entity.ProjectDeptId;
-
+/**
+ * 
+ * @author Ashish Rawat
+ *
+ */
 @Repository
 public interface ProjectRepository extends JpaRepository<PMEProject, ProjectDeptId>{
 	
